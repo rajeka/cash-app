@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-[400px] h-[calc(100vh-80px)] flex items-center justify-center bg-white relative">
+    <main className="min-h-screen h-[calc(100vh-80px)] bg-white relative">
       <Image
         src="/trans_cover.png"
         fill
@@ -46,6 +46,11 @@ export default function Home() {
           </SignedOut>
         </div>
       </div>
+      <footer className="py-4 text-center border-t-2 relative">
+        <p className="text-sm text-gray-600 fixed left-90 bottom-0 mb-5">
+          &copy; {new Date().getFullYear()} Cash App. All rights reserved.
+        </p>
+      </footer>
     </main>
   );
 }
