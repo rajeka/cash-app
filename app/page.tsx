@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen h-[calc(100vh-80px)] bg-white relative">
+    <main className="min-h-[400px] h-[calc(100vh-80px)] bg-white relative flex">
       <Image
         src="/trans_cover.png"
         fill
